@@ -25,3 +25,5 @@ git remote add origin https://github.com/ipracticum-fullstack/js-start.git
 
 git push -u origin main
 
+git clone https://github.com/ipracticum-fullstack/js-start.git
+
