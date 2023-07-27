@@ -1,0 +1,106 @@
+<html>
+  <head>
+    <title>CSS Basics</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Borel&family=Handjet:wght@300&family=Lisu+Bosa:ital,wght@1,200&family=Lumanosimo&family=Noto+Sans:ital,wght@1,100&display=swap"
+      rel="stylesheet"
+    />
+
+    <!--
+
+      font-family: 'Borel', cursive;
+font-family: 'Handjet', cursive;
+font-family: 'Lisu Bosa', serif;
+font-family: 'Lumanosimo', cursive;
+font-family: 'Noto Sans', sans-serif;
+-->
+
+    <link rel="stylesheet" href="Basics.css" type="text/css" />
+
+    <!--Internal CSS-->
+    <style>
+      /*CSS Rules*/
+
+      /*element selector*/
+      span {
+        background-color: blue;
+        font-family: "Lisu Bosa", serif;
+      }
+
+      /*class selector*/
+      .themeColor {
+        background-color: greenyellow;
+      }
+
+      span.themeColor {
+        background-color: aqua;
+      }
+
+      div.themeColor {
+        background-color: blueviolet;
+        font-family: "Lisu Bosa", serif;
+      }
+
+      h1 {
+        font-family: "Handjet", cursive;
+        /*font-family: "Noto Sans", sans-serif;*/
+      }
+
+      /*universal selector*/
+      * {
+        margin: 0px;
+        padding: 0px;
+        font-family: "Borel", cursive;
+      }
+
+      /*Id Selector*/
+      #heading2 {
+        background-color: olivedrab;
+        /*font-family: "Handjet", cursive;*/
+        font-family: "Noto Sans", sans-serif;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!--Inline style example with block level component-->
+    <div style="background-color: yellow">
+      This is an Inline style example with div. Div is a block level component
+      by default
+    </div>
+
+    <div style="background-color: red">
+      This is an Inline style example with div. Div is a block level component
+      by default
+    </div>
+
+    <!--Internal style example with inline component-->
+    <span
+      >This is an internal style example with span. Span is an inline component
+      by default</span
+    >
+
+    <span>This is another internal style example </span>
+
+    <span class="themeColor">This is another internal style example </span>
+
+    <div style="background-color: orange">This</div>
+
+    <!--Internal style example with a-->
+    <div class="themeColor">This is an internal style example with div</div>
+
+    <h1 class="themeColor">This is an internal style example with h1</h1>
+
+    <h2 id="heading2">This is the class selector example</h2>
+
+    <span>element selector example </span>
+
+    <div class="themeColor">Hello</div>
+    <span class="themeColor">Hello</span>
+    <p class="themeColor">Hello</p>
+    <span>Hello</span>
+  </body>
+</html>
