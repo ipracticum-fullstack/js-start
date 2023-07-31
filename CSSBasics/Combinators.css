@@ -1,0 +1,50 @@
+/*
+    Adjacent Sibling
+        div + p {}
+    
+    General Sibling
+        div ~ p {}
+
+    Child
+        div > p {}    
+
+    Descendant
+        div  p {}        
+*/
+
+div p {
+  color: purple;
+}
+
+h2 ~ p {
+  color: green;
+}
+
+h2 + p {
+  color: red;
+}
+
+article > p {
+  color: blue;
+}
+
+pre {
+  background: #f4f4f4;
+  border: 1px solid #ddd;
+  border-left: 3px solid #f36d33;
+  color: #666;
+  page-break-inside: avoid;
+  font: normal normal 14px/16px "Courier New", Courier, Monospace;
+  line-height: 1;
+  margin-bottom: 1.6em;
+  max-width: 100%;
+  padding: 0.5em 1em;
+  display: block;
+  word-wrap: break-word;
+  margin-left: 30px;
+  margin-right: 30px;
+  overflow: auto;
+  overflow-x: auto;
+  white-space: pre-wrap;
+  counter-reset: line;
+}

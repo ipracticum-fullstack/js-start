@@ -1,0 +1,63 @@
+<html>
+  <head>
+    <title>CSS Basics</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Borel&family=Handjet:wght@300&family=Lisu+Bosa:ital,wght@1,200&family=Lumanosimo&family=Noto+Sans:ital,wght@1,100&display=swap"
+      rel="stylesheet"
+    />
+
+    <!--
+        font-family: 'Borel', cursive;
+        font-family: 'Handjet', cursive;
+        font-family: 'Lisu Bosa', serif;
+        font-family: 'Lumanosimo', cursive;
+        font-family: 'Noto Sans', sans-serif;
+
+         box-sizing: border-box;
+
+         https://developer.mozilla.org/en-US/docs/Web/CSS/display
+
+         display: none vs visibility: hidden
+    -->
+
+    <link rel="stylesheet" href="Combinators.css" type="text/css" />
+  </head>
+
+  <body>
+    <div style="background: lightgrey; border: solid darkgrey">
+      <pre>
+         
+        div p {
+            color: purple;
+        }
+
+        h2 ~ p {
+            color: green;
+        }
+
+        h2 + p {
+            color: red;
+        }
+
+        article > p {
+            color: blue;
+        }
+    </pre
+      >
+
+      <h2>This is a h2 Element</h2>
+      <p>This is a p Element</p>
+      <h2>This is a h2 Element</h2>
+      <h3>This is a h3 Element</h3>
+      <p>This is a p Element</p>
+      <h2>This is a h2 Element</h2>
+      <p>This is a p Element</p>
+      <article>
+        <p>This is a nested p Element in article</p>
+      </article>
+    </div>
+  </body>
+</html>
