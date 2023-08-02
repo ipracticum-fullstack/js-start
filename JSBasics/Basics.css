@@ -1,0 +1,12 @@
+table,
+td {
+  border: 1px solid black;
+}
+
+div {
+  margin-top: 20 px;
+  margin-bottom: 20 px;
+  padding: 20px;
+  border: solid 2px darkgray;
+  max-width: fit-content;
+}
